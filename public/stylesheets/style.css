@@ -1,0 +1,57 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  background: #333;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #00B7FF;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #00B7FF;
+}
+
+input {
+  font-size: 18px;
+  border-radius: 2px;
+  padding: 3px;
+
+}
+
+.btn {
+  background: #00B7FF;
+  color: #333;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.save-routine {
+  display: flex;
+  flex-direction: column;
+}
+
+form > div {
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  background: #555;
+  border: 3px solid #00B7FF;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+label {
+  font-size: 18px;
+}

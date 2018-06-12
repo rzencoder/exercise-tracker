@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  form(action="/api/create-user" method="POST" )
+    p Create New User
+    div
+      label(for="username") Username
+      input(class="input" name="username" required)
+    input(class="btn" type="submit")
+
+  form(class="save-routine" action="/api/save-routine" method="post" )
+    p Create New Routine
+    div
+      label(for="userId") User ID
+      input(class="input" name="userId" type="text" required)
+    div
+      label(for="name") Routine Name
+      input(class="input" name="name" type="text" required)
+    div
+      label(for="duration") Duration (mins)
+      input(class="input" name="duration" type="number" required)
+    div
+      label(for="date") Date
+      input(class="input" name="date" type="date")
+    div
+      input(class="btn" type="submit")
+
+  form( action="/api/fetch-user" method="post" )
+    p Retrieve Users Routines
+    div
+      label(for="userId") User ID
+      input(class="input" name="userId" required)
+    input(class="btn" type="submit")
+  p #{message}
+  p #{data}
